@@ -5,9 +5,9 @@ using UIKit;
 
 namespace GMapsIssueDemo
 {
-	class GoogleMapsDelegate : NSObject, IMapViewDelegate
+	class GoogleMapsDelegate : MapViewDelegate
 	{
-		public UIView MarkerInfoWindow(MapView mapView, Marker marker)
+		public override UIView MarkerInfoWindow(MapView mapView, Marker marker)
 		{
 			UIView toBeView = new UIView();
 			//toBeView.AddSubview(iv);
